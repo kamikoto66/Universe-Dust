@@ -1,0 +1,117 @@
+[
+    {
+        "id": "Item_1",
+        "Mosaic": "Item_1_mosaic",
+        "ItemObject": "Item_1"
+    },
+    {
+        "id": "Item_2",
+        "Mosaic": "Item_2_mosaic",
+        "ItemObject": "Item_2"
+    },
+    {
+        "id": "Item_3",
+        "Mosaic": "Item_3_mosaic",
+        "ItemObject": "Item_3"
+    },
+    {
+        "id": "Item_Ball",
+        "Mosaic": "Item_Ball_mosaic",
+        "ItemObject": "Item_Ball"
+    },
+    {
+        "id": "Item_Bone",
+        "Mosaic": "Item_Bone_mosaic",
+        "ItemObject": "Item_Bone"
+    },
+    {
+        "id": "Item_Bone_2",
+        "Mosaic": "Item_Bone_2_mosaic",
+        "ItemObject": "Item_Bone_2"
+    },
+    {
+        "id": "Item_Bool",
+        "Mosaic": "Item_Bool_mosaic",
+        "ItemObject": "Item_Bool"
+    },
+    {
+        "id": "Item_Bool_2",
+        "Mosaic": "Item_Bool_2_mosaic",
+        "ItemObject": "Item_Bool_2"
+    },
+    {
+        "id": "Item_Box",
+        "Mosaic": "Item_Box_mosaic",
+        "ItemObject": "Item_Box"
+    },
+    {
+        "id": "Item_Cat",
+        "Mosaic": "Item_Cat_mosaic",
+        "ItemObject": "Item_Cat"
+    },
+    {
+        "id": "Item_Egg_1",
+        "Mosaic": "Item_Egg_1_mosaic",
+        "ItemObject": "Item_Egg_1"
+    },
+    {
+        "id": "Item_Egg_2",
+        "Mosaic": "Item_Egg_2_mosaic",
+        "ItemObject": "Item_Egg_2"
+    },
+    {
+        "id": "Item_Fire",
+        "Mosaic": "Item_Fire_mosaic",
+        "ItemObject": "Item_Fire"
+    },
+    {
+        "id": "Item_Fish",
+        "Mosaic": "Item_Fish_mosaic",
+        "ItemObject": "Item_Fish"
+    },
+    {
+        "id": "Item_Fuck",
+        "Mosaic": "Item_Fuck_mosaic",
+        "ItemObject": "Item_Fuck"
+    },
+    {
+        "id": "Item_Gold",
+        "Mosaic": "Item_Gold_mosaic",
+        "ItemObject": "Item_Gold"
+    },
+    {
+        "id": "Item_Gong",
+        "Mosaic": "Item_Gong_mosaic",
+        "ItemObject": "Item_Gong"
+    },
+    {
+        "id": "Item_Leef",
+        "Mosaic": "Item_Leef_mosaic",
+        "ItemObject": "Item_Leef"
+    },
+    {
+        "id": "Item_Odeng",
+        "Mosaic": "Item_Odeng_mosaic",
+        "ItemObject": "Item_Odeng"
+    },
+    {
+        "id": "Item_Slime_1",
+        "Mosaic": "Item_Slime_1_mosaic",
+        "ItemObject": "Item_Slime_1"
+    },
+    {
+        "id": "Item_Slime_2",
+        "Mosaic": "Item_Slime_2_mosaic",
+        "ItemObject": "Item_Slime_2"
+    },
+    {
+        "id": "Item_Slime_3",
+        "Mosaic": "Item_Slime_3_mosaic",
+        "ItemObject": "Item_Slime_3"
+    },
+    {
+        "id": "Item_Soccer",
+        "Mosaic": "Item_Soccer_mosaic",
+        "ItemObject": "Item_Soccer"
+    }
+]

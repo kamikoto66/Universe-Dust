@@ -5,19 +5,30 @@ using UnityEngine.UI;
 
 public class Timer : UI {
 
-    private Text TimerText;
-    private float CurrentTime;
+    private bool IsTimeOver;
+    private bool IsPause;
 
+    private Text TimerText;
+     public float CurrentTime { get; private set; }
+  
 	// Use this for initialization
 	void Start () {
         TimerText = Vars["Value"].GetComponent<Text>();
-
+        CurrentTime = 60.0f;
+        IsPause = false;
+        IsTimeOver = false;
     }
 	
 	// Update is called once per frame
 	void Update () {
-        CurrentTime = float.Parse(System.DateTime.Now.ToString("ss"));
 
-        Debug.Log(CurrentTime);
+        if(IsPause.Equals(false) && IsTimeOver.Equals(false))
+        {
+            CurrentTime -= Time.deltaTime;
+            TimerText.text = string.Format("Time \r\n{0}", (int)CurrentTime);
+
+            if (CurrentTime < 0.0f)
+                IsTimeOver = true;
+        }
     }
 }
