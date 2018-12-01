@@ -10,8 +10,6 @@ public class TitleScene : UI {
 	// Use this for initialization
 	void Start () {
         ItemManager.Instance.Init();
-
-        StartCoroutine("Load");
 	}
 	
 	// Update is called once per frame
