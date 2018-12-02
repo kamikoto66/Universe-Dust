@@ -38,19 +38,25 @@ public class PixelItemObject : MonoBehaviour {
         eMosaic,
         eItemObject
     }
-  
+
+    private AudioSource EffectSound;
     private SpriteRenderer StarRenderer;
     private SpriteRenderer MosaicRenderer;
     private SpriteRenderer ItemObjectRenderer;
-
+    private ParticleSystem Partic;
     private Coroutine FadeInRoutine;
     private Coroutine FadeOutRoutine;
+    private bool IsGetItem;
 
     private State _ItemState;   
     [SerializeField] private Index _ItemIndex;
 
     // Use this for initialization
     void Start () {
+        EffectSound = GetComponentInChildren<AudioSource>();
+        Partic = GetComponentInChildren<ParticleSystem>();
+        Partic.Stop();
+
         var Renderers = GetComponentsInChildren<SpriteRenderer>();
 
         StarRenderer = Renderers[0];
@@ -60,11 +66,12 @@ public class PixelItemObject : MonoBehaviour {
         MosaicRenderer.sprite = ItemManager.Instance.LoadMosaicSprite(_ItemIndex.ToString());
         ItemObjectRenderer.sprite = ItemManager.Instance.LoadItemObjectSprite(_ItemIndex.ToString());
 
-
         _ItemState = State.eDust;
+        IsGetItem = false;
     }
-	// Update is called once per frame
-	void FixedUpdate() {
+
+    // Update is called once per frame
+    void FixedUpdate() {
 
         if (DataManager.Instance.CameraScale <= 4.0f && _ItemState.Equals(State.eDust))
         {
@@ -150,6 +157,11 @@ public class PixelItemObject : MonoBehaviour {
 
         renderer.enabled = false;
 
+        if(IsGetItem.Equals(true))
+        {
+            Destroy(gameObject);
+        }
+
         yield return null;
     }
 
@@ -169,4 +181,18 @@ public class PixelItemObject : MonoBehaviour {
 
         yield return null;
     }
+
+    private void OnMouseDown()
+    {
+        if(DataManager.Instance.CameraScale >= 5.0f)
+        {
+            DataManager.Instance.Add(_ItemIndex);
+            StartCoroutine(FadeOut(ItemObjectRenderer));
+            Partic.Play();
+            EffectSound.Play();
+
+            IsGetItem = true;
+        }
+    }
+
 }

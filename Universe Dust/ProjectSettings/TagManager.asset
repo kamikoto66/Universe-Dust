@@ -5,10 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - bullet
-  - Boss
+  - bullet_2
   - Asteroid
   - bamboo
-  - bullet_2
+  - Boss
+  - ItemGet
   layers:
   - Default
   - TransparentFX

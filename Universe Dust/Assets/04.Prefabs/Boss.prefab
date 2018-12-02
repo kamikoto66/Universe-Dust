@@ -126,7 +126,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1237938636338332}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.21, y: -0.66, z: 0}
+  m_LocalPosition: {x: -1.54, y: 0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4917067287026590}
@@ -139,7 +139,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1969655294433864}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.21, y: 3.25, z: 0}
+  m_LocalPosition: {x: -1.8, y: 3.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4917067287026590}
@@ -152,7 +152,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1820574427448450}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.21, y: 1.25, z: 0}
+  m_LocalPosition: {x: -1.5, y: 1.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4917067287026590}
@@ -165,7 +165,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1401690630446100}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.63, y: 1.92, z: 0}
+  m_LocalPosition: {x: -2.36, y: 1.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4917067287026590}
@@ -217,6 +217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e8c1e4f13c6acc449ef1ddc0d7c2e8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHp: 0
+  curHp: 0
   hpBar: {fileID: 0}
 --- !u!114 &114697478081281424
 MonoBehaviour:
@@ -238,6 +240,17 @@ MonoBehaviour:
   - {fileID: 1296884655784664, guid: 10d8cce17668da54098741afd9978eee, type: 2}
   - {fileID: 1557357198295770, guid: ce200d5528480fb4ba70f86baa63afae, type: 2}
   - {fileID: 1500690820960220, guid: aac0331e5a540ae42ae1055a424f5834, type: 2}
+  - {fileID: 1101113446953750, guid: 299a30d0fc4cc344c96528a6f2d51b8f, type: 2}
+  - {fileID: 1419055188233298, guid: 5cae1787cb4d1ad4bb8dd397fb45bbcb, type: 2}
+  - {fileID: 1923433204947650, guid: ddfd34691d68e8a4aa0805e97f6d77c5, type: 2}
+  textBullet:
+  - {fileID: 1840720709379544, guid: 1edb6d83f5be5ba4bb793fddfa1177ea, type: 2}
+  - {fileID: 1258344530666532, guid: 63f6b114f54bec447ab458ecff7a80a5, type: 2}
+  skill4: {fileID: 1123937278836652, guid: dc92d3d81d05ca8419bb81b0373df1c8, type: 2}
+  skill4Pos:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!212 &212636518550010746
 SpriteRenderer:
   m_ObjectHideFlags: 1
