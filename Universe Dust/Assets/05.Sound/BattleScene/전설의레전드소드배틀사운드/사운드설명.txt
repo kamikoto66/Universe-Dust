@@ -1,0 +1,10 @@
+배틀파트 사운드 설명
+0	enemy_swing: 팬더가 팔 휘두를 때
+1	Fire01: 일반탄 발사
+2	Fire02: 유도판 발사
+3	bamboo_fire: 대나무 발사
+4	explosion: 플레이어가 죽거나 팬더가 죽을 때 터지는 이펙트 출력 시
+5	player_hit: 플레이어 피격 시
+6	shout: 팬더 브레스 발사
+7	sword_swing: 공격 실행 시
+8	sword_hit: 공격 실행했을 때 팬더가 맞을경우

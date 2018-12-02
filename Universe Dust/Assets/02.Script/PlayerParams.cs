@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerParams : CharacterParams {
@@ -23,8 +24,14 @@ public class PlayerParams : CharacterParams {
 
         base.GetHitEnemyAttack(dmg);
 
+        BattleSoundManager.instance.SetMusic(5);
+
         if (isDead == true)
+        {
             GetComponent<Animator>().SetTrigger("isDead");
+            BattleResultSave.instance.win = 2;
+            SceneManager.LoadScene("EndScene");
+        }
 
         invincibility = true;
         GetComponent<Animator>().SetBool("getHit", true);

@@ -24,8 +24,8 @@ public class TimeManager : MonoBehaviour {
 
         if(curTime < 0.1f)      // 게임 종료
         {
-            //SceneManager.LoadScene();
-
+            BattleResultSave.instance.win = 2;
+            SceneManager.LoadScene("EndScene");
         }
 	}
 }

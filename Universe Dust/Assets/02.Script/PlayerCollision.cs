@@ -17,7 +17,7 @@ public class PlayerCollision : MonoBehaviour {
             return;
 
         Debug.Log("충돌 바깥");
-        if (col.gameObject.tag == "bullet")
+        if (col.gameObject.tag == "bullet" || col.gameObject.tag == "bullet_2")
         {
             Debug.Log("충돌");
             playerParams.GetHitEnemyAttack(10);
@@ -25,8 +25,13 @@ public class PlayerCollision : MonoBehaviour {
         }
         else if(col.gameObject.tag == "Asteroid")
         {
-            playerParams.GetHitEnemyAttack(30);
+            playerParams.GetHitEnemyAttack(20);
             col.gameObject.GetComponent<Bullet_Bamboo>().Bomb();
+            Destroy(col.gameObject);
+        }
+        else if(col.gameObject.tag == "bamboo")
+        {
+            playerParams.GetHitEnemyAttack(10);
             Destroy(col.gameObject);
         }
 

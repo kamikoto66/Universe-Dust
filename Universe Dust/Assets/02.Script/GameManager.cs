@@ -17,5 +17,7 @@ public class GameManager : MonoBehaviour {
     {
         // 플레이어가 공격하는 버튼.
         boss.GetComponent<CharacterParams>().GetHitEnemyAttack(player.GetComponent<CharacterParams>().attackDmg);
+
+        BattleSoundManager.instance.SetMusic(7);
     }
 }

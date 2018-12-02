@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class CharacterParams : MonoBehaviour {
 
-    protected int maxHp;
-    protected int curHp;
+    public int maxHp;
+    public int curHp;
     public int attackDmg { get; set; }
     public bool isDead { get; set; }
     [SerializeField] private Image hpBar;
