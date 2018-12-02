@@ -1192,7 +1192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23062c7e22a64fa4493588a0ee640c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ItemIndex: 0
+  _ItemIndex: 14
 --- !u!114 &114773418965930068
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1204,7 +1204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23062c7e22a64fa4493588a0ee640c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ItemIndex: 0
+  _ItemIndex: 3
 --- !u!198 &198042228293209278
 ParticleSystem:
   m_ObjectHideFlags: 1

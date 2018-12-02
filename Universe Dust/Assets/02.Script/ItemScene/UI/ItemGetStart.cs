@@ -11,11 +11,17 @@ public class ItemGetStart : UI {
 	// Use this for initialization
 	IEnumerator Start () {
 
+        FindObjectOfType<Timer>().IsPause = true;
+        GameObject.Find("Bgm").GetComponent<AudioSource>().Pause();
+
         yield return StartCoroutine(FadeIn(Vars["Ready"].GetComponent<Text>()));
 
         yield return StartCoroutine(FadeIn(Vars["Go!"].GetComponent<Text>()));
 
         yield return StartCoroutine(FadeOut(GetComponent<Image>()));
+
+        FindObjectOfType<Timer>().IsPause = false;
+        GameObject.Find("Bgm").GetComponent<AudioSource>().Play();
 
         Destroy(gameObject);
     }

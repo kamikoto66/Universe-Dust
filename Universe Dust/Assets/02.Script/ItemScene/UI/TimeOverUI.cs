@@ -12,6 +12,8 @@ public class TimeOverUI : UI {
 
         yield return new WaitForSeconds(1.0f);
 
+        UnityEngine.SceneManagement.SceneManager.LoadScene(3);
+
 	}
 	
     IEnumerator FadeOut(Graphic graphic)

@@ -1484,7 +1484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23062c7e22a64fa4493588a0ee640c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ItemIndex: 0
+  _ItemIndex: 22
 --- !u!114 &114364901009142774
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1496,7 +1496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23062c7e22a64fa4493588a0ee640c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ItemIndex: 0
+  _ItemIndex: 6
 --- !u!114 &114465092450495390
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1508,7 +1508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23062c7e22a64fa4493588a0ee640c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ItemIndex: 0
+  _ItemIndex: 2
 --- !u!198 &198001855532615812
 ParticleSystem:
   m_ObjectHideFlags: 1

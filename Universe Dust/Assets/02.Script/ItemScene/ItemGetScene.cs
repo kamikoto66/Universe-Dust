@@ -12,12 +12,13 @@ public class ItemGetScene : MonoBehaviour {
 	void Start () {
 
         TimeOver = false;
-
+        _Timer.IsPause = true;
+        UIManager.OpenUI<ItemGetStart>("Prefab/ItemGetStart!");
 
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
 		
         if(_Timer.IsTimeOver.Equals(true) && TimeOver.Equals(false))
         {

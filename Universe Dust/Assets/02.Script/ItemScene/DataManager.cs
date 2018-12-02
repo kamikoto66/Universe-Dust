@@ -38,7 +38,7 @@ public class DataManager : MonoBehaviour {
         if(InitData.Equals(false))
         {
             GetItems = new List<PixelItemObject.Index>();
-            //SwordObject = GameObject.FindGameObjectWithTag("ItemGet").transform;
+            SwordObject = GameObject.FindGameObjectWithTag("ItemGet").transform;
             CameraScale = 1f;
 
             InitData = true;
