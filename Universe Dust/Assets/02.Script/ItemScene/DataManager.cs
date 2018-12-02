@@ -57,7 +57,7 @@ public class DataManager : MonoBehaviour {
         obj.GetComponent<RectTransform>().SetAsFirstSibling();
         obj.GetComponent<RectTransform>().anchoredPosition = new Vector2(0f, 90f + 40f * GetItems.Count);
         obj.Init(index);
-
+        
         GetItems.Add(index);
     }
 }

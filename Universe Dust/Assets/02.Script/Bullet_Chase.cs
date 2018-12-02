@@ -19,7 +19,6 @@ public class Bullet_Chase : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         Destroy(gameObject, 20f);
 
-
     }
 
     void Update()
