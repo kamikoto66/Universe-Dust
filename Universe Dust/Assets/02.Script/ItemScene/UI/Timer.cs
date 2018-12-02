@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class Timer : UI {
 
-    private bool IsTimeOver;
-    private bool IsPause;
+    public bool IsTimeOver { get; private set; }
+    public bool IsPause { get; set; }
 
     private Text TimerText;
      public float CurrentTime { get; private set; }

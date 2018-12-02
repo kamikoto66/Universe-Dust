@@ -50,4 +50,9 @@ public abstract class GenericTable<T> where T : BaseDescriptor
 	{
 		return dictionary.Values;
 	}
+
+    public int Size()
+    {
+        return dictionary.Values.Count;
+    }
 }
