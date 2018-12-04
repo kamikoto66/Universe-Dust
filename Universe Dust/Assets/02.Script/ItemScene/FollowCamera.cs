@@ -19,8 +19,8 @@ public class FollowCamera : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 
-        CurrentCameraPos.x = Mathf.Clamp(ItemPlayerController.transform.position.x, -12.2f, 12.2f);
-        CurrentCameraPos.y = Mathf.Clamp(ItemPlayerController.transform.position.y, -20f, 20f);
+        CurrentCameraPos.x = Mathf.Clamp(ItemPlayerController.transform.position.x, -46.0f, 46.0f);
+        CurrentCameraPos.y = Mathf.Clamp(ItemPlayerController.transform.position.y, -25, 25f);
 
         CamTransform.position = CurrentCameraPos;
 

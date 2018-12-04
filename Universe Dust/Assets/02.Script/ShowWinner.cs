@@ -40,6 +40,7 @@ public class ShowWinner : MonoBehaviour {
 
     public void OnClickRetry()
     {
+        DataManager.Instance.ResetData();
         retryButton.image.sprite = buttonUI;
         SceneManager.LoadScene("TitleScene");
     }

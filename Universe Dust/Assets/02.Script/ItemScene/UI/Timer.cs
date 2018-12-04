@@ -14,7 +14,7 @@ public class Timer : UI {
 	// Use this for initialization
 	void Start () {
         TimerText = Vars["Value"].GetComponent<Text>();
-        CurrentTime = 60.0f;
+        CurrentTime = 10.0f;
         IsPause = false;
         IsTimeOver = false;
     }

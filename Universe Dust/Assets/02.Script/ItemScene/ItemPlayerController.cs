@@ -55,7 +55,7 @@ public class ItemPlayerController : MonoBehaviour {
             var dir = CurrentTouchPos - PrevTouchPos;
             dir.Normalize();
 
-            PlayerTrans.Translate(dir * MoveSpeed * Time.deltaTime);
+            PlayerTrans.Translate(-dir * MoveSpeed * Time.deltaTime);
         }
 #endif
 

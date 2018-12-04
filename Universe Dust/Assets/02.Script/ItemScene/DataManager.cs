@@ -28,17 +28,16 @@ public class DataManager : MonoBehaviour {
         }
     }
 
-    private bool InitData;
-    private Transform SwordObject;
     public List<PixelItemObject.Index> GetItems;
+
+    private bool InitData;
     public float CameraScale { get; set; }
 
     public void Init()
     {
         if(InitData.Equals(false))
-        {
+        {    
             GetItems = new List<PixelItemObject.Index>();
-            SwordObject = GameObject.FindGameObjectWithTag("ItemGet").transform;
             CameraScale = 1f;
 
             InitData = true;
@@ -48,16 +47,12 @@ public class DataManager : MonoBehaviour {
     public void ResetData()
     {
         InitData = false;
+        GetItems.RemoveRange(0, GetItems.Count);
     }
 
     public void Add(PixelItemObject.Index index)
     {
-        var obj = UIManager.OpenUI<ItemUI>("Prefab/ItemUI");
-        obj.GetComponent<RectTransform>().parent = SwordObject;
-        obj.GetComponent<RectTransform>().SetAsFirstSibling();
-        obj.GetComponent<RectTransform>().anchoredPosition = new Vector2(0f, 90f + 40f * GetItems.Count);
-        obj.Init(index);
-        
+        FindObjectOfType<ItemCount>().Add(index, GetItems.Count);
         GetItems.Add(index);
     }
 }

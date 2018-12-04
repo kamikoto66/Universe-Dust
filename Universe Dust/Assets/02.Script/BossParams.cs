@@ -10,7 +10,7 @@ public class BossParams : CharacterParams {
     protected override void InitParams()
     {
         base.InitParams();
-        maxHp = 100;
+        maxHp = 400;
         curHp = maxHp;
         attackDmg = 10;
     }
